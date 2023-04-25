@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+        integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bilimkana American</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_top">
+                <ul class="social-list">
+
+                    <li class="social-items"><a href=""><img src="./img/bilimkana/Vector.png"></a></li>
+                    <li class="social-items"><a href=""><img src="./img/bilimkana/Vector (1).png"></a></li>
+                </ul>
+                <div class="header_logo">
+                    <a href="#"><img src="./img/bilimkana/logo 1.svg" alt="logo"></a>
+                </div>
+                <div class="header_search">
+                    <p class="search">ПОИСК</p>
+                    <img src="./img/search.png" class="search-icon">
+                </div>
+
+            </div>
+
+            <nav class="header_nav">
+                <ul class="menu">
+                    <li class="menu__items"><a href="#postupat">ПОСТУПАЮЩИМ</a></li>
+                    <li class="menu__items"><a href="">РУКОВОДСТВО</a></li>
+                    <li class="menu__items"><a href="#teachers">УЧИТЕЛЯ</a></li>
+                    <li class="menu__items"><a href="">ПАРТНЕРЫ</a></li>
+                    <li class="menu__items"><a href="#news">НОВОСТИ</a></li>
+                    <li class="menu__items"><a href="#project">ПРОЕКТНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+
+                            <section class="hero">
+                                <div class="container">
+                                    <h3 class="hero_slogan">Наши приоритеты: критическое мышление, английский язык,
+                                        программирование, Art.</h3>
+                                    <button class="podrobnee" type="button" id="hero__modal-open">ЗАПИСАТЬСЯ</button>
+                                </div>
+
+                            </section>
+
+
+                        </li>
+                        <li class="glide__slide">
+
+                            <section class="mission">
+                                <div class="container">
+
+
+                                    <h3 class="mission_slogan">Миссия Фонда BILIMKANA - поддержка и формирование <br>
+                                        нового поколения молодых людей, конкурентоспособных<br>
+                                        на глобальном уровне.
+                                    </h3>
+
+                                    <div class="divider"></div>
+                                    <h5 class="mission_text">В нашей школе дети: <br>
+                                        Свободные, говорящие на нескольких языках, <br>
+                                        имеющие свою точку зрения и уважающие <br>
+                                        чужое мнение, с критическим мышлением,<br>
+                                        коммуникабельные и мобильные, любящие свою Родину, имеющие свою страновую
+                                        идентичность,<br>
+                                        близкие к культуре и к искусству.
+                                    </h5>
+                                    <button class="podrobnee_m" id="mission__modal-open">ПОДРОБНЕЕ</button>
+                                    <img src="./img/dde.png" class="vektor">
+                                </div>
+                            </section>
+
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+
+                </div>
+            </div>
+        </section>
+        <div class="modal" id="hero__modal">
+            <div class="modal__view">
+                <span class="modal__closeBtn" id="hero__modal-close">x</span>
+                <h2>Записаться на обратный звонок с Bilimkana school</h2>
+                <label for="name" id="label_name">Имя:</label>
+                <input type="text" id="name" name="name">
+                <label for="number" id="label_number">Номер телефона:</label>
+                <input type="text" id="number" name="number">
+                <label for="grade" id="label_grade">Выберите класс ребенка:</label>
+                <input type="number" id="grade" name="grade">
+                <button type="submit" class="otpravit">Отправить</button>
+            </div>
+        </div>
+
+        <div class="modal" id="mission__modal">
+            <div class="modal__view">
+                <span class="modal__closeBtn" id="mission__modal-close">x</span>
+                <div class="modal__logo">
+                    <a href="#"><img src="./img/bilimkana/logo 1.svg" alt="logo"></a>
+                </div>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of
+                </p>
+            </div>
+        </div>
+        <section class="news" id="news">
+            <div class="container">
+                <h2 class="news__title">Новости</h2>
+
+
+                <div class="news_glide" id="news_glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            
+                            <li class="glide__slide">
+                                <div class="news__card">
+                                    <div class="news__img">
+                                        <img src="./img/teacher  3.png">
+                                    </div>
+                                    <div class="news__text">
+                                        <p class="news__desc">Новый учитель английского языка</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="news__card">
+                                    <div class="news__img">
+                                        <img src="./img/16b8b086ed68f7971097ae73858b7f98 3.png">
+                                    </div>
+                                    <div class="news__text">
+                                        <p class="news__desc2">Новый клуб по
+                                            программированию</p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="glide__slide">
+
+                                <div class="news__card">
+                                    <div class="news__img">
+                                        <img src="./img/teacher  3.png">
+                                    </div>
+                                    <div class="news__text">
+                                        <p class="news__desc">Новый учитель английского языка</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="glide__slide">
+
+                                <div class="news__card">
+                                    <div class="news__img">
+                                        <img src="./img/16b8b086ed68f7971097ae73858b7f98 3.png">
+                                    </div>
+                                    <div class="news__text">
+                                        <p class="news__desc2">Новый клуб по
+                                            программированию</p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"><img
+                                src="./img/prev.png"></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"><img
+                                src="./img/next.png"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="container">
+            <h2>Почему мы?</h2>
+            <div class="why__items">
+                <div class="why__card">
+                    <img src="./img/SEM05478 1.png" width="396px" height="396px">
+                    <h4>Углубленное изучение</h4>
+                    <h6>английский язык и математика английский язык и математика</h6>
+                </div>
+                <div class="why__card">
+                    <img src="./img/cheli.png" width="396px" height="396px">
+                    <h4>Качество, проверенное временем</h4>
+                    <h6>Лучшие результаты по ОРТ И Алтын Тамга среди частных школ!</h6>
+                </div>
+                <div class="why__card">
+                    <img src="./img/picture1.png" width="396px" height="396px">
+                    <h4>Уровневое обучение</h4>
+                    <h6>математика, английский и кыргызский язык.математика, английский и кыргызский язык.</h6>
+                </div>
+                <div class="why__card">
+                    <img src="./img/urokipointeres.png" width="396px" height="396px">
+                    <h4>Уроки по интересам</h4>
+                    <h6>Программирование, АРТ, шахматы и хореография интегрированы в расписание уроков в начальной школе.</h6>
+                </div>
+                <div class="why__card">
+                    <img src="./img/SEM00264 2.png" width="396px" height="396px">
+                    <h4>Домашних заданий нет</h4>
+                    <h6>учебная программа осваивается за счёт увеличения часов по основным предметам.</h6>
+                </div>
+                <div class="why__card">
+                    <img src="./img/SEM04631 1.png" width="396px" height="396px">
+                    <h4>Коммуникация</h4>
+                    <h6>Постоянная связь родителей, учеников и учителей через электронную систему SRM Bilimkana.</h6>
+                </div>
+            </div>
+        </div>
+        </section>
+            <section class="enroll" id="postupat">
+                <div class="container">
+                <h1>Поступающим</h1>
+                <!-- <img src="./img/enroll.png" class="img_postup"> -->
+                <h2>КАК ПОСТУПИТЬ В BILIMKANA SCHOOL?</h2>
+                <h4>1 шаг: Вступительное тестирование</h4>
+                <p>При поступлении в школу с 0 по 1 классы кандидаты проходят интервью с психологом, со 2 по 11 классы,
+                    кандидаты сдают тест и проходят интервью с психологом. </p> <br>
+                <p>Вступительное тестирование проводится по трем предметам : математика , английский язык, русский язык.
+                </p>
+                <p>По результатам теста предоставляются стипендии.</p>
+                <ul class="scolarship">
+                    <li>Золотая стипендия ($1500) предоставляется кандидатам, выполнившим успешно от 91% вступительного
+                        теста.
+                    </li>
+                    <li>Серебряная стипендия ($1000) предоставляется при 81 % успешном прохождении теста.</li>
+                    <li>Бронзовая стипендия ($500) предоставляется кандидатам, выполнившимуспешно более 70%
+                        тестирования. </li>
+                </ul>
+                <p>Стипендии действуют в течение одного академического года.</p>
+                <h6><b>Чтобы начать процесс поступления необходимо пройти по ссылке ниже и заполнить форму заявки. После
+                        этого
+                        мы свяжемся с вами и проконсультируем о дальнейших шагах.</b></h6>
+                <button class="registration" type="button" id="hero__modal-open">ЗАПИСАТЬСЯ</button>
+                <h4>2 шаг: Заявление на зачисление учащегося</h4>
+                <p>Учащиеся, вступительное тестирование, должны предоставить перечень документов на создание контракта:
+                </p>
+                <ul class="scolarship">
+                    <li>Свидетельство о рождении и паспорта родителей (можно одного)</li>
+                    <li>Личное дело из школы</li>
+                    <li>Мед карты 026 и 063</li>
+                </ul>
+                <h2>СТОИМОСТЬ ОБУЧЕНИЯ</h2>
+                <p>Стоимость обучения 5000$ в год.
+                    Питание и транспорт оплачиваются отдельно.</p>
+
+                <p>Стоимость контракта и форма оплаты для каждого отдельного учащегося фиксируется в приложении к
+                    Договору об
+                    оказании образовательных услуг, заключенном между школой и родителем. Для получения подробной
+                    информации о
+                    сроках и формах оплаты, а также о возможных скидках обращайтесь по номеру +996 (770) 11 00 25.</p>
+
+                <p>На второго и более детей - 10% скидка каждому ребёнку, в случае если ребёнок не получает одну из
+                    наших
+                    стипендий по результатам тестирования.</p>
+
+            </section>
+            </div>
+        </div>
+
+        <section class="teachers" id="teachers">
+            <div class="container">
+
+                <div class="teachers__header">
+                    <h2>Познакомьтесь с нашими преподавателями</h2>
+                    <button type="button" class="podrob">Подробнее</button>
+                </div>
+                <ul class="carti teachers__list">
+                    <li class="fio teachers__item">
+                        <img src="./img/SEM05936 1.png">
+                        <h5>Фамилия Имя Отчество</h5>
+                        <h6>Математика</h6>
+                    </li>
+                    <li class="fio teachers__item">
+                        <img src="./img/SEM05491 1.png">
+                        <h5>Фамилия Имя Отчество</h5>
+                        <h6>Математика</h6>
+                    </li>
+                    <li class="fio teachers__item">
+                        <img src="./img/SEM05331 1.png">
+                        <h5>Фамилия Имя Отчество</h5>
+                        <h6>Математика</h6>
+                    </li>
+                    <li class="fio teachers__item">
+                        <img src="./img/SEM05509 1.png">
+                        <h5>Фамилия Имя Отчество</h5>
+                        <h6>Математика</h6>
+                    </li>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="project" id="project">
+            <div class="container">
+            <h2>Проектная деятельность</h2>
+
+            <div class="glide_project">
+                <div class="glide__track" data-glide-el="track">
+
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/french.png">
+                                <h3>Французский<br>
+                                    Немецкий <br>
+                                    Китайский <br>
+                                    Английский </h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/dance.png">
+                                <h3>Танцы</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/programming.png">
+                                <h3>Программирование</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/art.png">
+                                <h3>Искусство</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/history.png">
+                                <h3>История</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/photo.png">
+                                <h3>Фотография</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/oart.png">
+                                <h3>Ораторское искусство</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/debat.png">
+                                <h3>Дебаты</h3>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="cart_project">
+                                <img class="cart_img" src="./img/communication.png">
+                                <h3>Мир информации и коммуникации</h3>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="&lt;"><img
+                            src="./img/prev.png"></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir="&gt;"><img
+                            src="./img/next.png"></button>
+                </div>
+
+
+            </div>
+        </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+        integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.slim.min.js"
+        integrity="sha512-1e7eG2wdX0SfkBsRkR+ETYdfg0UfcdMpYeH0FXKFCceSJkB9jzetxVpUvNAgTuUfJDhbRQdkuLvylB7U2N2uhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://use.fontawesome.com/9b8c2c2724.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+        integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
